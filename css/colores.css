@@ -1,0 +1,53 @@
+body{
+    background-color: azure;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+}
+.secundaria {
+    display: flex;
+    flex-direction: row;
+}
+.terciaria {
+    display: flex;
+    flex-direction: row;
+}
+.color-style {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background-color: aqua; 
+}
+.box2 {
+    background-color: chartreuse;
+}
+.box3 {
+    background-color: darkviolet;
+}
+.box4 {
+    background-color: rgb(64, 224, 208);
+}
+.box5 {
+    background-color: rgb(93, 173, 226);
+}
+.box6 {
+    background-color: rgb(243, 156, 18);
+}
+.box7 {
+    background-color:#BDC3C7;
+}
+.box8 {
+    background-color:#18A093;
+}
+.box9 {
+    background-color:#F4F057 ;
+}
+
+
