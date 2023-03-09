@@ -8,6 +8,9 @@ label {
     margin: 0;
     padding: 0;
 }
+.boton{
+    margin-block: 100px;
+}
 .fuente3 {
     display: flex;
     justify-content: center;
@@ -19,6 +22,7 @@ label {
     transform: translateX(-50%) translateY(-50%);
     font-size: 200px;
     font-weight: 100;
+  
     
 }
 .fuente3 {
