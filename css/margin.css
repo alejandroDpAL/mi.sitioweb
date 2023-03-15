@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(195, 223, 223);
+    border: dotted black;
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.box-style{
+    width: 250px;
+    margin-bottom: 300px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: justify;
+    font-size: 1,3em;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4em;
+}
+.box-1 {
+    background-color: rgb(51, 193, 193);
+    border: 2px solid rgb(64,64,64,.9) 
+}
+/* border dashed */
+.box-2 {
+    background-color: azure;
+    border:2px dashed darkblue;
+}
+/* border dotted */
+.box-3 {
+    background-color: azure;
+    border:2px dotted rgb(53, 134, 234);
+}
+/* border double*/
+.box-4 {
+    background-color:aliceblue;
+    border:2px double rgb(37, 115, 125);
+}
