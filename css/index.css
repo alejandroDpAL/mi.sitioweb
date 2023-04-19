@@ -1,16 +1,19 @@
 .fondo {
-    background-image:url(blanco.jpg);
+    background-image:url(../img/carton.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
 }
+h2 {
+color: rgb(135, 234, 234);
+}
 a {
     display: flex;
     justify-content: center;
-    display: block;
-    width: 100px;
+    display:inline-block;
+    width: 120px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     border-radius: 10px;
     margin: 30px 10px;
     padding: 15px 60px;
@@ -22,4 +25,12 @@ a :hover {
     background-color: transparent;
     border: 2px solid rgb(241, 29, 29);
     color: azure;
+}
+.ul {
+    font-size: 1em;
+    font-weight: 900;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
 }
