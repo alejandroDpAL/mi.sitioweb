@@ -42,3 +42,23 @@ label {
          url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
   }
+
+  a {
+    display:block;
+    justify-content:center;
+    display: block;
+    width: 100px;
+    font-family:'Bebas Neue', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 30px 10px;
+    padding: 15px 10px;
+    background-color: rgb(15, 21, 21);
+    color: rgb(195, 6, 6);
+    text-decoration: none;
+}
+a :hover {
+    background-color: transparent;
+    border: 2px solid rgb(241, 29, 29);
+    color: azure;
+}
