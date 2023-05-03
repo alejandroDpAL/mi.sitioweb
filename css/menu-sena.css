@@ -1,11 +1,5 @@
-.fondo {
-    background-image:url(../img/carton.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed
-}
-h2 {
-color: rgb(135, 234, 234);
+body{
+    background-color: black;
 }
 .btn {
     box-sizing: border-box;
@@ -52,19 +46,5 @@ color: rgb(135, 234, 234);
   }
   a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
   }
-.ul {
-    text-align: center;
-    font-size: 1em;
-    font-weight: 900;
-    display: flex;
-    margin: 50px;
-    justify-content: center;
-    align-items: center;
-}
-div {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
