@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-nav {
+    background: rgb(57, 64, 66);
+    height: 80px;
+}
+.main-menu{
+    width: 100%;
+    text-align: right;
+}
+.item-style {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 30px;
+    list-style: none;
+}
+.item-style-last{
+    margin-right: 100px;
+}
+a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.hamburguer-menu {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    /* desaparecemos el menu */
+    .main-menu{
+        display: none;
+    }
+    .hamburguer-menu{
+        display: inline-block;
+        color: white;
+        font-size: 2.3em;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+}

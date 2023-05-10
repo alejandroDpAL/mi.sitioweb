@@ -8,11 +8,6 @@ body {
   justify-items: center;
 
 }
-img{
-    width: 30px;
-    height: 40px;
-    position: absolute;
-}
   .container {
     background-color: rgb(252, 252, 252);
     width: 90%;
