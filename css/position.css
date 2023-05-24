@@ -1,0 +1,40 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(23, 189, 240);
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.box_static {
+    position: static;
+    background-color: rgb(55, 214, 50);
+}
+.box_absolute {
+    background-color: rgb(58, 255, 232);
+    position: absolute;
+    bottom: 0;
+}
+.box_fixed {
+    background-color: rgb(255, 134, 13);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+.box_relative {
+    background: linear-gradient(black, red);
+    position: relative;
+    top: -300px;
+}
+.parr_1 {
+    font-size: 2em;
+    line-height: 1.6em;
+    margin: 40px;
+    text-align: justify;
+
+}

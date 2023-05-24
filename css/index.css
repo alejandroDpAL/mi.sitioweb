@@ -51,8 +51,29 @@ color: rgb(135, 234, 234);
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   }
   a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: linear-gradient(-225deg,
+    rgb(255, 255, 255) 50%,/* primer color */
+    rgb(0, 0, 0) 60%, /* los porcentajes funcionan en relación al tamaño */
+    rgb(17, 186, 243) 30%,
+    rgb(12, 255, 235) 100% 
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: flex;
+    justify-content: center;
+
+
+  }
+  @keyframes textclip {
+    to {
+      background-position: 180% center;
+    }
   }
 .ul {
     text-align: center;
