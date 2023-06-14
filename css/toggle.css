@@ -4,7 +4,7 @@
 .contenedor1-off {
     width: 250px;
     height: 120px;
-    background: rgb(7, 214, 62);
+    background: linear-gradient(rgb(4, 171, 4), rgb(49, 236, 49));
     border-radius: 55px;
     padding: 3px;
     transition: all 1s;
@@ -24,7 +24,7 @@
     height: 110px;
     background: white;
     top: -32px;
-    left: 5px;
+    left: 4px;
     border-radius: 50%;
     transition: all 1s;
 }
