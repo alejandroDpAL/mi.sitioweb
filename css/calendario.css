@@ -7,7 +7,7 @@
 .contenedor {
     width: 100%;
     border: 1px solid rgb(255, 255, 255);
-    height: 100vh;
+    height: 70vh;
     display: grid; 
     align-content: center;
     justify-content: center;
@@ -36,6 +36,12 @@
 .domi {
     background-color: rgb(157, 254, 254);
 }
-h1 {
+
+span {
+    margin-top: 6%;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2em;
+    font-weight: 300;
 }
