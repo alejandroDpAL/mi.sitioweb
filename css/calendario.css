@@ -1,0 +1,41 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    height: 100vh;
+    display: grid; 
+    align-content: center;
+    justify-content: center;
+    grid-template-columns:repeat(7,100px );
+    grid-template-rows:repeat(6,80px);
+    grid-gap : 20px 25px;
+}
+.contenedor .inicio {
+    grid-column-start: 3;
+}
+.box {
+    background-color: rgb(220, 248, 248);
+    border: 1px solid rgb(255, 255, 255);
+}
+.dia {
+    background-color: rgb(93, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.festivo {
+    background-color: rgb(250, 47, 47);
+    color: white;
+}
+.domi {
+    background-color: rgb(157, 254, 254);
+}
+h1 {
+    text-align: center;
+}
