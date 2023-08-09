@@ -2,13 +2,58 @@
     margin: 0;
     padding: 0;
 }
-body {
-    width: 100%;
+body{
     display: grid;
-    grid-template: "empty-letf main-page empty-rigth"100vh /
-                 1fr    minmax(700px,1200px)  1fr;
+    width: 100%;
+    grid-template: "empty-let     main-page                empty-right" 100vh/
+                 minmax(50px,1fr)       minmax(900px,1200px)       minmax(500px,1fr)             ;
 }
-.main-page {
-    background-color: aqua;
+.main-page{
     grid-area: main-page;
+}
+header{
+    display: grid;
+    gap: 30px;
+    margin-top: 50px;
+    grid-template:" logo    main-menu"80px/
+                    150px       minmax(700px,100%);
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(53, 235, 255);
+}
+.main-menu{
+    grid-area: main-menu ;
+    background-color: rgb(11, 138, 188);
+}
+.style-tex{
+    font-family: verdana,sans-serif;
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    display: grid;
+    margin-top:15px ;
+    grid-template: "main-img   main-img  main-img " 600px/
+                    1fr        1fr       1fr;
+}
+.main-img{
+    grid-area: main-img ;
+    background-color: rgb(148, 218, 255);
+}
+.article-1 {
+    grid-area: article-1;
+}
+.article-2 {
+    grid-area: article-2;
+}
+.article-3 {
+    grid-area: article-3;
+}
+.img-article {
+    height: 350px;
+    background-color: aqua;
 }
