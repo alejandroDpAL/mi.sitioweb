@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    display: grid;
+    grid-template: "empty-letf main-page empty-rigth"100vh /
+                 1fr    minmax(700px,1200px)  1fr;
+}
+.main-page {
+    background-color: aqua;
+    grid-area: main-page;
+}

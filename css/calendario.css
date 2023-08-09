@@ -7,12 +7,12 @@
 .contenedor {
     width: 100%;
     border: 1px solid rgb(255, 255, 255);
-    height: 70vh;
+    height: 95vh;
     display: grid; 
     align-content: center;
     justify-content: center;
     grid-template-columns:repeat(7,100px );
-    grid-template-rows:repeat(6,80px);
+    grid-template-rows:repeat(7,80px);
     grid-gap : 20px 25px;
 }
 .contenedor .inicio {
@@ -22,6 +22,13 @@
     background-color: rgb(220, 248, 248);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
+}
+.titulo {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 .dia {
     background-color: rgb(93, 226, 226);
