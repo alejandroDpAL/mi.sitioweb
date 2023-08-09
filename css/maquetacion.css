@@ -20,11 +20,11 @@ header{
 }
 .logo{
     grid-area: logo;
-    background-color: rgb(53, 235, 255);
+    background-color: goldenrod;
 }
 .main-menu{
     grid-area: main-menu ;
-    background-color: rgb(11, 138, 188);
+    background-color: rgb(30,167,69);
 }
 .style-tex{
     font-family: verdana,sans-serif;
@@ -37,23 +37,25 @@ header{
 .main-content{
     display: grid;
     margin-top:15px ;
-    grid-template: "main-img   main-img  main-img " 600px/
-                    1fr        1fr       1fr;
+    gap: 40px ;
+    grid-template: "main-img       main-img      main-img" 600px
+                   "article-1      article-2      article-3" 450px/
+                      1fr            1fr             1fr;
 }
 .main-img{
     grid-area: main-img ;
-    background-color: rgb(148, 218, 255);
+    background-color: darkcyan;
 }
-.article-1 {
+.article-1{
     grid-area: article-1;
 }
-.article-2 {
+.article-2{
     grid-area: article-2;
 }
-.article-3 {
+.article-3{
     grid-area: article-3;
 }
-.img-article {
+.img-article{
     height: 350px;
-    background-color: aqua;
+    background-color: rgb(64,64,64.8);
 }
