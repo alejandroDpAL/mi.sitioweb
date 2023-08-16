@@ -1,10 +1,11 @@
 .mainbox{
+    justify-content: center;
     display: grid;
     grid-template:  "empty-left cabeza        empty         empty       empty-right " 150px
                     "empty-left imagen-prin  imagen-prin  imagen-prin   empty-right "700px
                     "empty-left aticulo1     aticulo2      aticulo3     empty-right " 400px
                     "empty-left txt-art1     txt-art2      txt-art3     empty-right " 500px/
-                     200px        420px       420px         420px         200px;
+                     100px        420px       420px         420px         200px;
     grid-gap: 50px;
            
 }
