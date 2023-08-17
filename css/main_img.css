@@ -4,6 +4,7 @@
     margin: 0;  
 }
 body{
+    background-color: black;
     width: 100%;
     display: grid;
     grid-template: "empty-left         main-page           empty-right"  100vh /
@@ -93,7 +94,7 @@ header{
 }
 .img-article-3 {
     width: 100%;
-    background-image: url(./maquetacion-img/elefante.jpg); /* este es sin aumentp vista pc */
+    background-image: url(../img/violin.jpg); /* este es sin aumentp vista pc */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +102,7 @@ header{
 }
 .img-article-4 {
     width: 100%;
-    background-image: url(./maquetacion-img/tortuga.jpg); /* este es sin aumentp vista pc */
+    background-image: url(../img/trompeta.jpeg); /* este es sin aumentp vista pc */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +110,7 @@ header{
 }
 .img-article-5 {
     width: 100%;
-    background-image: url(./maquetacion-img/abeja.jpg); /* este es sin aumentp vista pc */
+    background-image: url(../img/SAXOFON.jpg); /* este es sin aumentp vista pc */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +118,7 @@ header{
 }
 .img-article-6{
     width: 100%;
-    background-image: url(./maquetacion-img/jirafas.jpg); /* este es sin aumentp vista pc */
+    background-image: url(../img/flauta.jpg); /* este es sin aumentp vista pc */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
