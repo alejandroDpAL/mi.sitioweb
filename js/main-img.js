@@ -1,5 +1,5 @@
 let hamburgueMenu = document.getElementById("hamburguerMenu");
-let mainMenu = document.getElementById("main-menu");
+let mainMenu = document.getElementById("mainMenu");
 
 hamburgueMenu.addEventListener("click", function() {
     if (mainMenu.classList.contains("main-menu")){
