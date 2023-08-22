@@ -8,7 +8,7 @@ body{
     width: 100%;
     display: grid;
     grid-template: "empty-left         main-page           empty-right"  100vh /
-                 minmax(30px,1fr)  minmax(700px, 1200px)   minmax(30px,1fr) ;
+    minmax(30px,1fr)  minmax(700px, 1200px)   minmax(30px,1fr) ;
 }
 .main-page{
     grid-area: main-page ;
@@ -18,24 +18,52 @@ header{
     margin-top: 50px;
     gap: 30px;
     grid-template: "logo       main-menu" 80px / 
-                   170px       minmax(500px,100%);
+    170px       minmax(500px,100%);
 }
 .logo{
- 
+    
     border-radius: 15PX;
     grid-area:logo   ;
     
 }
+
 .main-menu{
     border-radius: 15PX;
     grid-area:main-menu ;
-    background-color: rgb(197, 120, 48);
-    width: 100%;
-    background-image: url(./maquetacion-img/pexels-pixabay-60692.jpg); /* este es sin aumentp vista pc */
+    width: -100%;
     height: 100%;
+    transition: all 1s;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+}
+.hamburguerMenu {
+    display: none;
+}
+ul {
+    list-style: none;
+}
+
+.item-horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    border-right: 1px solid rgb(177, 15, 15);
+    background-color: rgb(0, 0, 0);
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 1.3em;
+    cursor: pointer;
+} 
+.item-horizontal:hover{
+    background: rgb(204, 19, 19);
+}
+.enlace-item-horizontal{
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    
 }
 .style-text{
     font-family: Verdana, sans-serif;
@@ -64,6 +92,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .main-img{
     border-radius: 15PX;
@@ -75,6 +104,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .img-article-1{
     width: 100%;
@@ -83,6 +113,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .img-article-2 {
     width: 100%;
@@ -91,6 +122,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .img-article-3 {
     width: 100%;
@@ -99,6 +131,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .img-article-4 {
     width: 100%;
@@ -107,6 +140,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .img-article-5 {
     width: 100%;
@@ -115,6 +149,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .img-article-6{
     width: 100%;
@@ -123,6 +158,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .article-1{grid-area: article-1 ;}
 .article-2{grid-area: article-2 ;}
@@ -156,7 +192,47 @@ header{
           "main-page"
           auto / 100%;
     }
+    .main-menu{
+        width: 100%;
+        left: -100%;
+        position: fixed;
+        margin-top: 32px;
+        height: 100%;
+        transition: all 1s;
+        text-align: center;
+    }
+    .main-menu-block {
+        display: block;
+        width: 100%;
+        height: 600px;
+        margin-top: 32px;
+        left: 0;
+        position: fixed;
+        transition: all 1s;
+    }
+    .hamburguerMenu {
+        cursor: pointer;
+        display: block;
+        color: aqua;
+        width: 100%;
+        font-size: 40px;
+    }
+    .item-horizontal {
+        width: 100%;
+    }
     
+    .main-img{
+        border-radius: 15PX;
+        margin-top: 15PX;
+        grid-area: main-img;
+        width: 100%;
+        background-image: url(../img/micro2.jpeg); /* este es sin aumentp vista pc */
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
     .main-page {
         margin: 20px;
       }
