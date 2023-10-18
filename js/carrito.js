@@ -34,9 +34,9 @@ function calcularSubtotal() {
 }
 function determinarPluralSingular(auxCant){
     if(auxCant == 1) {
-        numeroProducto = innerHTML = "(" + auxCant + "producto)"
+        numeroProducto.innerHTML = "(" + auxCant + "producto)"
     }
     else if ((auxCant == 0) || auxCant > 1){
-        numeroProducto = innerHTML = "(" + auxCant + "productos)"   
+        numeroProducto.innerHTML = "(" + auxCant + "productos)"   
     }
 }

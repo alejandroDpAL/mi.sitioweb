@@ -7,7 +7,7 @@
     font-family: "Poppins";
   }
   .main-content {
-    width: 900px;
+    max-width: 900px;
     border: 2px solid rgb(64,64,64);
     border-radius: 10px;
     margin: 10px 0 0 10px;
