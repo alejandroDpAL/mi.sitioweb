@@ -44,6 +44,8 @@
                     20px       3fr                   4fr              20px;
   }
   .box-img-producto {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     grid-area: box-img-producto;
 /*     background-color:rgb(201, 236, 255); */
