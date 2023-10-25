@@ -12,8 +12,11 @@ header {
 }
 .barra {
     width: 100%;
-    height: 30px;
+    height: 39px;
     background-color: #232f3e;
+}
+.icon,.letra {
+    color: white;
 }
 .logo {
     background-image: url(../img/amazon.png);
@@ -40,8 +43,19 @@ header {
 .pais {
     grid-area: pais;
 }/* contenedor donde esta lo de busqueda */
+
+.header-search-input-focus {
+    border: 1px solid #FEBD69; /* Cambia el color del borde al hacer clic */
+    background-color: #fcfcfc; /* Cambia el color de fondo al hacer clic */
+}
+
+.header-search-input-no-focus {
+    border: 1px solid #E6E6E6; /* Cambia el color del borde cuando no se hace clic */
+    background-color: #FFFFFF; /* Cambia el color de fondo cuando no se hace clic */
+}
+
 .content-busqueda {
-    width: calc(100% - 800px);
+    width: calc(100% - 594px);
     margin: 10px 0 ;
     display: flex;
     flex-direction: row;
@@ -118,11 +132,90 @@ select {
 .i-carrito {
     height: 30px;
     width: 24px;
-    color: white;
     margin-top: 20px;
 }
 .l-carrito {
     font-size: 0.8em;
-    color: white;
     margin-top: 26px;
+}/* so far  */
+.c-menu {
+    margin-left: 8px;
+    display: flex;
+    height: 35px;
+    width: 78px;
 }
+.i-hambu {
+    height: 17px;
+    width: 20px;
+    margin: 10px 0 0 10px;
+}
+.t-todo {
+    font-size: 0.8em;
+    margin-top: 10px;
+}/* so far  */
+
+.main-content {
+    height: 100vh;
+    position: static;
+    z-index: 10;
+}/* so far  */
+.ofert {
+    width: 140px;
+    height: 30px;
+}
+.t-oferta {
+    font-size: 0.8em;
+    margin-top: 10px;
+}/* so far  */
+
+.box-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0, 0,.5);
+    z-index: 10;
+}
+.modal {
+    width: 90%;
+    height: 80%;
+    z-index: 20;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    display: grid;
+    grid-template: "box-main-img-modal info-modal" /
+                          1fr             350px;
+}
+.btn-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.4em;
+    border: 2px solid rgb(81, 185, 246,0.3);
+    border-radius: 6px;
+    padding: 1px 4px;
+    line-height: 1.1em;
+    display: flex;
+    justify-content: center;
+}
+.box-main-img-modal {
+    grid-area: box-main-img-modal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-modal {
+    width: 30%;
+    height:auto;
+}
+.info-modal {
+    grid-template: info-modal;
+    padding: /* arriba */50px /*  derecha*/ 75px /* abajo */ 100px /* izquierda */ 20px ;
+}/* so far  */
