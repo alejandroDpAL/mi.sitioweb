@@ -10,6 +10,11 @@ header {
     width: 100%;
     height: 60px;
 }
+.barra {
+    width: 100%;
+    height: 30px;
+    background-color: #232f3e;
+}
 .logo {
     background-image: url(../img/amazon.png);
     background-size: cover;
@@ -36,7 +41,7 @@ header {
     grid-area: pais;
 }/* contenedor donde esta lo de busqueda */
 .content-busqueda {
-    width: calc(100% - 700px);
+    width: calc(100% - 800px);
     margin: 10px 0 ;
     display: flex;
     flex-direction: row;
