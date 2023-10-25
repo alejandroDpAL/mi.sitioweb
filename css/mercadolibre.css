@@ -113,12 +113,11 @@ select {
 .i-carrito {
     height: 30px;
     width: 45px;
-    margin: 20px 0 0 ;
     color: white;
+    margin-top: 20px;
 }
 .l-carrito {
     font-size: 0.8em;
-    padding-bottom: 30px;
-    padding-left: 26px;
     color: white;
+    margin-top: 20px;
 }
