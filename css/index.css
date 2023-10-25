@@ -4,6 +4,90 @@
     background-size: cover;
     background-attachment: fixed
 }
+.conteneres {
+
+  max-width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  height: 200px;
+  color: white;
+}
+.contenedor1 {
+  background-image: url(../img/Netflix-Symbol.png);
+
+}
+.contenedor2 {
+  background-image: url(../img/game.jpg);
+}
+.contenedor3 {
+  background-image: url(../img/disney.jpeg);
+}
+.contenedor4 {
+  background-image: url(../img/colores.jpg);
+}
+.contenedor5 {
+  background-image: url(../img/MARGIN.png);
+}
+.contenedor6 {
+  background-image: url(../img/catalogo.jpg);
+}
+.contenedor7 {
+  background-image: url(../img/tablas.jpg);
+}
+.contenedor8 {
+  background-image: url(../img/formulario.jpg);
+}
+.contenedor9 {
+  background-image: url(../img/menu.png);
+}
+.contenedor10 {
+  background-image: url(../img/logoSena.png);
+
+}
+.contenedor11 {
+  background-image: url(../img/media.png);
+    width: 100%;
+}
+.contenedor12 {
+  background-image: url(../img/sub.png);
+}
+.contenedor13 {
+  background-image: url(../img/toggle.jpg);
+}
+.contenedor14 {
+  background-image: url(../img/box.png);
+}
+.contenedor15 {
+  background-image: url(../img/calendario.jpg);
+}
+.contenedor16 {
+  background-image: url(../img/maquetacion.jpg);
+}
+.contenedor17 {
+  background-image: url(../img/guitarra.jpg);
+}
+.contenedor18 {
+  background-image: url(../img/carrito.jfif);
+}
+.contenedor19 {
+  background-image: url(../img/ama.png);
+}
+
+a {
+  margin: 0 20px;
+  width: 200px;
+  height: 250px;
+  color: white;
+  z-index: 5;
+  position: relative;
+  right: 0;
+}
+p {
+  position: relative;
+  color: white;
+}
 h2 {
 color: rgb(135, 234, 234);
 }
