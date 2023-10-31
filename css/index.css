@@ -5,7 +5,7 @@
     background-attachment: fixed
 }
 .conteneres {
-
+  border-radius: 10px;
   max-width: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +14,7 @@
   height: 200px;
   color: white;
 }
+
 .contenedor1 {
   background-image: url(../img/Netflix-Symbol.png);
 }
@@ -67,13 +68,12 @@
 .contenedor17 {
   background-image: url(../img/guitarra.jpg);
 }
-.contenedor18 {
-  background-image: url(../img/carrito.jfif);
-}
-.contenedor19 {
-  background-image: url(../img/ama.png);
-}
 
+img {
+  height: 200px;
+  border-radius: 10px;
+  max-width: 250px;
+}
 
 
 a {
@@ -92,59 +92,7 @@ p {
 h2 {
 color: rgb(135, 234, 234);
 }
-.btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: transparent;
-    border: 2px transparent;
-    border-radius: 0.6em;
-    color: #e74c3c;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 20px;
-    padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-  }
-  .btn:hover, .btn:focus {
-    color: #fff;
-    outline: 0;
-  }
-  
-.third {
-    border-color:rgb(231, 20, 20);
-    color: #312c2c;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 rgb(255, 6, 6) inset;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-  }
-  .third:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  }
-  a {
-    text-align: center;
-    background-color: white;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-  }
   @keyframes textclip {
     to {
       background-position: 180% center;
@@ -163,4 +111,25 @@ div {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.movable-div {
+  position: relative;
+  transition: transform 0.7s ease;
+}
+
+.movable-div:hover {
+  transform: translateY(-20px);
+}
+
+.hidden-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movable-div:hover .hidden-text {
+  opacity: 1;
 }
