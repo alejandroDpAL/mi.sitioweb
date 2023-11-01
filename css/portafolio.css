@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.3rem;/* se usa "rem" cuando el tamaño es referente a la pagina  y no */
+}
+nav ul {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+}
+/* primer menu */
+.first-item {
+    margin-left: 50px;
+}
+nav >ul >li {
+    display: inline-block; /* display inline block hace que el li se haga en la parte de arriba en linea */
+    width: 250px;
+    line-height: 70px;
+    text-align: center;
+}
+nav >ul >li:hover {
+    background: linear-gradient(aqua, rgb(4, 149, 182));
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li {
+    position:relative ;
+}
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+    text-align: center;
+    /* border bottom sirve para hacer la lia que separa a los items */
+    border-bottom: 1px solid rgb(194, 190, 190);
+}
+nav li > ul > li:hover {
+    background: linear-gradient(aqua, rgb(4, 149, 182));
+    cursor: pointer;
+
+}
+/* tercer menu */
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    border-left: 1px solid rgb(194, 190, 190);
+}
