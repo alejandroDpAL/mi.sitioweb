@@ -44,16 +44,6 @@ header {
     grid-area: pais;
 }/* contenedor donde esta lo de busqueda */
 
-.header-search-input-focus {
-    border: 1px solid #FEBD69; /* Cambia el color del borde al hacer clic */
-    background-color: #fcfcfc; /* Cambia el color de fondo al hacer clic */
-}
-
-.header-search-input-no-focus {
-    border: 1px solid #E6E6E6; /* Cambia el color del borde cuando no se hace clic */
-    background-color: #FFFFFF; /* Cambia el color de fondo cuando no se hace clic */
-}
-
 .content-busqueda {
     width: calc(100% - 594px);
     margin: 10px 0 ;
@@ -167,19 +157,38 @@ select {
     font-size: 0.8em;
     margin-top: 10px;
 }/* so far  */
+/* categorias div */
+.categorias {
+    height: 33px;
+    background-color: #ffffff;
+}
+.red-malla {
+    height: 50px;
+    background-color: #f4f5f6;
+    justify-content: center;
+}
+.categorias, .red-malla {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    border-bottom: 1px solid rgb(183, 182, 182);
+}
+p {
+    font-size: 0.8em;
+}
 
-/* lupa */
+/* contenedor producto */
 .container {
     display: flex;
-    padding-left: 14%;
-    padding-top: 5%;
+    flex-direction: row;
 }
 
 .image-container {
     position: relative;
     width: 500px; /* Ajusta el ancho según tu imagen */
-    overflow: hidden;
+    overflow: hidden;/* para quitar barra de desplazamiento */
     display: flex;
+    margin-left: 12.5%;
     justify-content: center;
     align-items: center;
 }
@@ -187,41 +196,89 @@ select {
 #original-image {
     max-width: 100%;
     display: block;
+    padding-left: 90px;    
+}
+.icon-share {
+    padding-left: 20px;
+    padding-top: 70px;
 }
 
-.magnifier-container {
-    width: 700px; /* Ancho de la lupa */
-    height: 600px; /* Altura de la lupa */
+/* SO FAR  */
+.divsboby {
+    position: relative;
+    height: 700px;
+    width: 43px;
+    left: 200px;
+    top: 60px;
+}
+.divbody {
+    border-radius: 6px;
+    margin-bottom: 9px;
+    border: solid 1px rgb(169, 167, 167);
+}
+.balon-p {
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 41px;
+    height: 41px;
 }
 
-.magnifier {
-    width: 100%;
+/* icon share */
+.icon-share {
+width: 25px;
+height: 25px;
+}
+/* div descripción del producto */
+.info-producto {
+    margin: 40px;
+    width: 540px;
     height: 100%;
-    cursor: crosshair;/* hace que se vuelva una cruz */
-    border:  1px solid rgb(143, 141, 141);
-    display: none;
-    background-image: url('../img/balon.jpg'); /* URL de tu imagen */
-    background-size: 750px; /* Ancho del contenedor de la imagen */
-    background-repeat: no-repeat;
 }
-.divbody:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 7);
-    border: 2px solid #197f91;
-  }
-  
-/* SO FAR  */
+.text-producto {
+    font-size: 1.4em;
+}
+.text-marca {
+    color: #007185;
+    font-size: 0.9em;
+}
+.precio-dolar {
+    font-size: 1.8em;
+    display: flex;
+    justify-content: start;
+}
+.decimales {
+    height: 33px;
+    width: 50px; 
+    padding-bottom: 10px;
+}
+.decimal {
+    font-size: 0.5em;
 
-.divsboby {
-    position: absolute;
-    height: 700px;
-    width: 45px;
-    top: 200px;
-    left: 200px;
+}
+.color ,.color-balon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+}
+.icon-angle {
+    margin-left: 10px;
+}
+th, td {
+    padding: 4px  ;
+}
+table {
+    width: 100%;
+}
+th {
+    padding: 0 15px 0 0;
+    display: flex;
+    justify-content: left;
 }
 
+
+/* modal */
 
 .box-modal {
     position: fixed;
