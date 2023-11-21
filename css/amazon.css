@@ -202,6 +202,7 @@ p {
     padding-left: 20px;
     padding-top: 70px;
 }
+/* clases para la lupa  */
 
 /* SO FAR  */
 .divsboby {
@@ -276,10 +277,22 @@ th {
     display: flex;
     justify-content: left;
 }
+li {
+    font-size: 0.9em;
+}
+/* carrito de compras */
+.carro-div {
+    width: 242px;
+    height: 500px;
+    border: 1px solid rgb(182, 182, 182);
+    margin-top: 40px;
+    border-radius: 10px;
+}
 
+
+/* so far */
 
 /* modal */
-
 .box-modal {
     position: fixed;
     top: 0;

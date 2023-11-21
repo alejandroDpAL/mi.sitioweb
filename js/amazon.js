@@ -10,7 +10,9 @@ divBody.forEach(divBody => {
         oriImage.setAttribute('src', src);
     });
 });
+/* lupa */
 
+/*  */
 // Para visualizar el contenedor modal
 
 
