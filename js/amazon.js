@@ -1,4 +1,3 @@
-
 //divs body 
 const divBody = document.querySelectorAll('.divbody');
 const oriImage = document.getElementById('original-image');
@@ -13,11 +12,8 @@ divBody.forEach(divBody => {
 /* lupa */
 
 /*  */
-// Para visualizar el contenedor modal
-
 
 //Boton de salir 
-
 const closeButton = document.querySelector('.btn-close');
 const modalContainer = document.querySelector('.box-modal');
 
@@ -41,10 +37,36 @@ miniDivs.forEach((miniDiv) => {
     mainImgDiv.querySelector('img').src = img.src;
   });
 });
-//lupa del producto
 
+/* para que la img made al modal */
+let modal = document.getElementById("modal");
+oriImage.addEventListener('click',function () {
+  modal.style.display = "flex"
+});
+/* so far */
 
+/* star */
+var numeroDeEstrellas = 1.7;
+let numberEstrella = document.getElementById("numberEstrella");
+let estrellas = [
+    document.getElementById("etrellaUno"),
+    document.getElementById("etrellaDos"),
+    document.getElementById("etrellaTres"),
+    document.getElementById("etrellaCuatro"),
+    document.getElementById("etrellaCinco")
+];
+numeroDeEstrellas = Math.min(Math.max(numeroDeEstrellas, 0), 5);
+numberEstrella.innerText = numeroDeEstrellas;
 
+for (let i = 0; i < estrellas.length; i++) {
+    estrellas[i].classList.remove("fa-regular", "fa-solid", "fa-star", "fa-star-half-stroke");
 
-
-
+    if (i < Math.floor(numeroDeEstrellas)) {
+        estrellas[i].classList.add("fa-solid", "fa-star");
+    } else if (i === Math.floor(numeroDeEstrellas) && numeroDeEstrellas % 1 !== 0) {
+        estrellas[i].classList.add("fa-regular", "fa-star-half-stroke");
+    } else {
+        estrellas[i].classList.add("fa-regular", "fa-star");
+    }
+}
+/* so far */

@@ -75,7 +75,20 @@
         
         <div class="icon-share"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
         <div class="info-producto"><span class="text-producto">SaiLiN 2021 Liga de Campeones Fußball-Fans Fanartikel Fußball Regular Nr. 5 Ball Geburtstag Geschenk Eine Vielzahl Von Stilen</span><br>
-        <span class="text-marca">Marca:SaiLIN</span><br><br><hr>
+        <span class="text-marca">Marca:SaiLIN</span><br><br>
+        <!-- star -->
+        <div class="star">
+                <P id="numberEstrella">0</P>
+                <i class="stars fa-star" id="etrellaUno"></i>
+                <i class="stars fa-star" id="etrellaDos"></i>
+                <i class="stars fa-star" id="etrellaTres"></i>
+                <i class="stars fa-star" id="etrellaCuatro"></i>
+                <i class="stars fa-star" id="etrellaCinco"></i>
+            <i class="fa-solid fa-angle-down icon-angle"></i>
+            <a style="text-decoration: none; color: #007185; margin-left: 15px;"  href="#"> 5 calificaciones</a>
+        </div>
+        <!-- so far -->
+        <hr>
         
         <div class="precio-dolar">
             <span class="precio">24</span>
@@ -125,10 +138,52 @@
     </div>
     <!-- carro  -->
     <div class="carro-div">
-        <div class="precio-carro"></div>
-        <div class="entrega-carro"></div>
-        <div class="stock-carro"></div>
+        <div class="precio-car"><span class="pre-car">24</span><span class="decimal-car">99€</span></div>
+        <div class="entrega-car">
+            <span class="entrega-span">Entrega de $ 5,54 del 13 de diciembre al 5 de enero .</span>
+            <a class="det" href="#">Detalles</a>
+
+            <div class="i-car">
+                <i  class="fa-solid fa-location-dot"></i>
+                <div class="e-ciudad">Entrega en Isnos <br> Actualizar ubicación</div>
+            </div>
+            
+<!-- stock -->
+            <div class="t-stock">En stock</div>
+            <div class="btn-stock"> 
+                <span class="btn-can">Cantidad:</span>
+                <select class="select-cantidad" name="canti" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select><br>
+                <button class="btn-a">añadir a la cesta</button>
+                <button class="btn-c">comprar ahora</button>
+            </div>
+<!--  -->
+            <table class="d-pago">
+                <tr>
+                    <td>Pago</td>
+                    <td class="td">transacción segura</td>
+                </tr>
+                <tr>
+                    <td>Se envía desde</td>
+                    <td >HJUYSWLL</td>
+                </tr>
+                <tr>
+                    <td>Vendido por</td>
+                    <td class="td">HJUYSWLL</td>
+                </tr>
+                <tr>
+                    <td>Devoluciones</td>
+                    <td class="td">Retornable hasta el 31 de enero de 2024</td>
+                </tr>
+            </table>
+            <hr>
+            <button class="btn-d">añadir a la lista de los deseos</button>
+        </div>
     </div>
+    <!--  -->
     </div>
     
 
@@ -137,8 +192,7 @@
  <!--  -->
 
     <!-- aqui comienza el modal -->
-  <div id="main-content" class="main-content"></div> 
-        <div class="box-modal">
+        <div class="box-modal" id="modal">
             <div class="modal">
             <div class="btn-close"><i class="fa-solid fa-xmark"></i></div>
             <div class="box-main-img-modal">
@@ -154,7 +208,6 @@
         <div class="divMiniaturas "><img class="balon" src="./img/balon5.jpg" alt=""></div>
         <div class="divMiniaturas "><img class="balon" src="./img/balon6.jpg" alt=""></div>
         <div class="divMiniaturas "><img class="balon" src="./img/balon7.jpg" alt=""></div>
-    </div>  
     <!-- este fue el modal -->
     <script src="./js/amazon.js"></script>
 </body>

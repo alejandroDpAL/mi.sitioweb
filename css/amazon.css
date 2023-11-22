@@ -6,14 +6,14 @@
 header {
     display: flex;
     flex-direction: row;
-    background-color:#131921;
+    background-color:#00453e;
     width: 100%;
     height: 60px;
 }
 .barra {
     width: 100%;
     height: 39px;
-    background-color: #232f3e;
+    background-color: #195851;
 }
 .icon,.letra {
     color: white;
@@ -145,9 +145,13 @@ select {
 }/* so far  */
 
 .main-content {
+    width: 100%;
     height: 100vh;
-    position: static;
-    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #00f;
 }/* so far  */
 .ofert {
     width: 140px;
@@ -242,6 +246,16 @@ height: 25px;
     color: #007185;
     font-size: 0.9em;
 }
+/* star */
+.star {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+}
+.stars {
+    color: #ffa41c;
+}
+/*  */
 .precio-dolar {
     font-size: 1.8em;
     display: flex;
@@ -283,13 +297,96 @@ li {
 /* carrito de compras */
 .carro-div {
     width: 242px;
-    height: 500px;
+    height: 520px;
     border: 1px solid rgb(182, 182, 182);
     margin-top: 40px;
     border-radius: 10px;
 }
-
-
+.precio-car {
+    padding:  12px /* ar */1px/* de */ 0/* ab */  20px/* iz */;
+}
+.pre-car {
+     font-size: 2em;   
+}
+.decimal-car {
+    font-size: 0.7em;
+}
+.entrega-car {
+    font-size: 0.9em;
+    padding: 16px;
+}
+.det {
+    color: #007185;
+    text-decoration: none;
+}
+.i-car {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+.e-ciudad {
+    margin-left: 5px;
+    font-size: 0.8em;
+    color: #007185;
+}
+.t-stock {
+    padding: 15px 0;
+    color: green;
+    font-size: 1.3em;
+}
+.select-cantidad {
+    border: 1px solid rgb(200, 200, 200);
+    background-color: white;
+    width: 80px;
+    height: 28px;
+    border-radius: 5px;
+}
+.btn-a , .btn-c{
+    width: 200px;
+    height: 33px;
+    font-size: 0.9em;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+.btn-a {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    background-color: #ffd814;
+}
+.btn-a:hover {
+    cursor: pointer;
+    background-color: #f9d108;
+}
+.btn-c {
+    background-color: #ffa41c;
+}
+.btn-c:hover {
+    cursor: pointer;
+    background-color: #fe9c0b;
+}
+.d-pago {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+.td {
+    color: #007185;
+}
+.btn-d {
+    border: 1px solid rgb(157, 157, 157);
+    background-color: white;
+    width: 200px;
+    height: 33px;
+    font-size: 0.9em;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.btn-d:hover {
+    cursor: pointer;
+    background-color: rgb(244, 246, 246);
+}
 /* so far */
 
 /* modal */
@@ -299,7 +396,7 @@ li {
     left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: rgb(0,0, 0,.5);
@@ -375,4 +472,9 @@ li {
 .selected {
     border: 2px solid #ff8f00;
   }
+ p {
+    font-size: 1em;
+    margin-left: 5px;
+    margin-right: 7px;
+ }
   
