@@ -1,13 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  
-  }
-  
+
   .puntuaciones {
     display: flex;
     flex-direction: column;
@@ -16,7 +7,6 @@ body {
     margin-bottom: 13%;
   
   }
-  
   .puntuacion-item {
     margin-bottom: 10px;
   }
@@ -27,7 +17,7 @@ body {
   
   .barra-container {
     position: relative;
-    width: 100%;
+    width: 200px;
     height: 20px;
     overflow: hidden;
     margin-bottom: 5px;

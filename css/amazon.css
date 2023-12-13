@@ -389,6 +389,63 @@ li {
 }
 /* so far */
 
+/* calificación */
+.calificacion-global {
+    background-color: #fff;
+    position: absolute; 
+    left: 39.6%;
+    width: 332px;
+    height: 324px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid gray;
+    padding: 10px 12px;
+    z-index: 2;
+}
+
+.number-star-div {
+    font-size: 16px;
+    font-weight: 600;
+}
+.barras {
+    width: 300px;
+    height: 22px;
+    color: #fe9c0b;
+}
+.pbarra {
+    margin:  5px 14px ;
+    font-family: "Poppins";
+    color: #089483;
+}
+.abarra {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;     
+    color: #195851;
+    font-family: "Poppins";
+}
+
+.barras-estrellas {
+    font-size: 14px;
+    margin: 6px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--azul2);
+}
+.barras {
+    width: 180px;
+    height: 20px;
+    border: 1px solid gray;
+}
+
+/*  */
+/* so far */
+
+
 /* modal */
 .box-modal {
     position: fixed;

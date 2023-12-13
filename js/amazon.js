@@ -1,3 +1,4 @@
+
 //divs body 
 const divBody = document.querySelectorAll('.divbody');
 const oriImage = document.getElementById('original-image');
@@ -45,28 +46,40 @@ oriImage.addEventListener('click',function () {
 });
 /* so far */
 
-/* star */
-var numeroDeEstrellas = 1.7;
-let numberEstrella = document.getElementById("numberEstrella");
-let estrellas = [
-    document.getElementById("etrellaUno"),
-    document.getElementById("etrellaDos"),
-    document.getElementById("etrellaTres"),
-    document.getElementById("etrellaCuatro"),
-    document.getElementById("etrellaCinco")
-];
-numeroDeEstrellas = Math.min(Math.max(numeroDeEstrellas, 0), 5);
-numberEstrella.innerText = numeroDeEstrellas;
+// Para visualizar el contenedor de la informacion de la calificación global
+let star = document.getElementById("star");
+let calificacionGlobal = document.getElementById("calificacionGlobal");
 
-for (let i = 0; i < estrellas.length; i++) {
-    estrellas[i].classList.remove("fa-regular", "fa-solid", "fa-star", "fa-star-half-stroke");
+star.addEventListener("mousemove", function() {
+    calificacionGlobal.style.display = "flex";
+});
+calificacionGlobal.addEventListener("mousemove", function() {
+    calificacionGlobal.style.display = "flex";
+});
+star.addEventListener("mouseleave", function () {
+    calificacionGlobal.style.display = "none";
+});
+calificacionGlobal.addEventListener("mouseleave", function () {
+    calificacionGlobal.style.display = "none";
+});
+// Fin para lo de la clificación global
 
-    if (i < Math.floor(numeroDeEstrellas)) {
-        estrellas[i].classList.add("fa-solid", "fa-star");
-    } else if (i === Math.floor(numeroDeEstrellas) && numeroDeEstrellas % 1 !== 0) {
-        estrellas[i].classList.add("fa-regular", "fa-star-half-stroke");
-    } else {
-        estrellas[i].classList.add("fa-regular", "fa-star");
-    }
-}
-/* so far */
+
+/* PARA LA CALIFICACIÓN  */
+let calificaciones = [4, 5, 3, 2, 5];
+
+let promedio = calificaciones.reduce((a, b) => a + b, 0) / calificaciones.length;
+
+let estrellas = new Array(5).fill(Math.round(promedio));
+
+let porcentajes = calificaciones.map(calificacion => (calificacion * 20) / 5);
+
+for (let i = 0; i < 5; i++) {
+    document.getElementById(`etrella${i+1}Divs`).style.fill = estrellas[i] > 0 ? "gold" : "gray";
+    document.getElementById(`puntuacion${i+1}`).style.width = `${porcentajes[i]}%`;
+    document.querySelector(`.porcentaje${i+1} .pbarra`).textContent = `${porcentajes[i].toFixed(2)}%`;
+ }
+ 
+
+
+
